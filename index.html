@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ITS472</title>
+	<title>SQL Data Inserter</title>
 	<style type="text/css">
 		body{
 			width: 100%;
@@ -23,27 +23,8 @@
 </head>
 <body>
 	<div class="wrapper">
-		<textarea id="JSONText" style="width:100%;height:300px;">
-2016692784,AFIQAH NADIA BINTI DAUD
-2016692708,AIDA NURASIKIN BINTI JAMIL
-2016692778,ANIS AMIRA BINTI MOHAMED
-2016692914,ATIRAH BINTI MOHD ZAWAWI
-2016692678,ISMA IZZAT BIN JEMI
-2016692964,MOHAMAD SUFFIAN BIN ABU BAKAR
-2016692646,MUHAMMAD FAHMI BIN ABDUL MULUK
-2016655066,NORFARIHA NABELA BINTI ABDUL RHASID
-2016692866,NUR AIN SYAFIQAH BINTI ISMAIL
-2016655058,NUR RAUDAH BINTI RUZELAN
-2016692724,NUR SABRINA BINTI ANUAR
-2016692734,NUR SYAFIQA BINTI AZALI
-2016692774,NUR SYAFIQAH BINTI IBRAHIM
-2016692852,NUR ZURRAIIN BINTI MOHD RAZALI
-2016655048,NURSYAFIQA BINTI CHE AHMAD
-2016692706,NURUL SYAZA ATHIRAH BINTI AZIZI
-		</textarea>
-		<textarea id="SQLTemplate" style="width:100%;">
-INSERT INTO STUDENT VALUES ('[[0]]','[[1]]');
-		</textarea>
+		<textarea id="JSONText" style="width:100%;height:300px;"></textarea>
+		<textarea id="SQLTemplate" style="width:100%;"></textarea>
 		<button onclick="createSQL();" style="width:100px;margin:50px;">Create SQL Commands</button>
 		<textarea id="SQLOutput" style="width:100%;height:800px;"></textarea>
 	</div>
