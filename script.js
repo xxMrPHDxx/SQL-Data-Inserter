@@ -152,7 +152,7 @@ function createSQL(){
 				command += (value ? value : "''");
 			}
 		});
-		outputBox.value += command.replace(/\t/g,"");
+		outputBox.value += command.replace(/\t/g,"") + "\n";
 		console.log(command.replace(/\t/g,""));
 	})
 }
